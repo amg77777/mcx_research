@@ -62,6 +62,6 @@ This project is licensed under the **MIT License**.
 
 For more technical information, refer to the **3GPP specifications related** to SIP and MCPTT:
 
-* [TS 24.379](https://www.3gpp.org/ftp/Specs/archive/24_series/24.379/), [TS 24.380](https://www.3gpp.org/ftp/Specs/archive/24_series/24.380/), [TS 24.384](https://www.3gpp.org/ftp/Specs/archive/24_series/24.384/).*
+[TS 24.379](https://www.3gpp.org/ftp/Specs/archive/24_series/24.379/), [TS 24.380](https://www.3gpp.org/ftp/Specs/archive/24_series/24.380/), [TS 24.384](https://www.3gpp.org/ftp/Specs/archive/24_series/24.384/).
 
 

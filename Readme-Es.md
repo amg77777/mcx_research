@@ -57,6 +57,6 @@ Este proyecto está licenciado bajo la Licencia MIT.
 - César  M. Varela García – QA & Desarrolladora
 
 ---
-*Para más información técnica, consulta las especificaciones de 3GPP relacionadas con SIP y MCPTT:* [TS 24.379](https://www.3gpp.org/ftp/Specs/archive/24_series/24.379/), [TS 24.380](https://www.3gpp.org/ftp/Specs/archive/24_series/24.380/), [TS 24.384](https://www.3gpp.org/ftp/Specs/archive/24_series/24.384/).
+**Para más información técnica, consulta las especificaciones de 3GPP relacionadas con SIP y MCPTT:** [TS 24.379](https://www.3gpp.org/ftp/Specs/archive/24_series/24.379/), [TS 24.380](https://www.3gpp.org/ftp/Specs/archive/24_series/24.380/), [TS 24.384](https://www.3gpp.org/ftp/Specs/archive/24_series/24.384/).
 
 
