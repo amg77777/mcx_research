@@ -29,7 +29,7 @@ MCX-SIP-Comm es un **sistema de comunicación de misión crítica** construido c
 1. **Clonar el Repositorio**  
    Clona el repositorio en tu máquina local:
    ```sh
-   git clone https://github.com/vlorenzolana/MCX-SIP-Comm.git
+   git clone https://github.com/cmvgg/SIP-MCPTT-Core.git
    cd MCX-SIP-Comm
    
    
