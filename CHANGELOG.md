@@ -1,3 +1,4 @@
+49316a1 - cmvgg, 2 minutes ago : Correcciones de linting 15/03/2025--16:07
 c57871b - vlorenzo, 19 hours ago : Dockerfile
 e47fd8c - César Manuel Varela García, 4 days ago : Update Readme-Es.md
 bddd555 - César Manuel Varela García, 4 days ago : Update Readme-Es.md
