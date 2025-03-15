@@ -1,4 +1,7 @@
-361f6eb - cmvgg, 2 minutes ago : Actualización de: demo2 demo3 demo3.c invite.sip  [15/03/2025 18:15]
+8ac1fff - cmvgg, 52 seconds ago : Actualización de: Training_Sofia-SIP.md  [15/03/2025 18:17]
+361f6eb - cmvgg, 3 minutes ago : Actualización de: demo2 demo3 demo3.c invite.sip  [15/03/2025 18:15]
+854bff4 - raspi, 84 minutes ago : Demo1
+0377e43 - raspi, 86 minutes ago : Demo 1 updated
 96a1b41 - cmvgg, 2 hours ago : Correcciones de linting 15/03/2025--16:34
 34d9c25 - cmvgg, 2 hours ago : Correcciones de linting 15/03/2025--16:12
 fb33302 - cmvgg, 2 hours ago : Correcciones de linting 15/03/2025--16:10
