@@ -1,2 +1,8 @@
-b97521b - Cesar Manuel Varela Garcia, 2 minutes ago : Correcciones de linting 28/02/2025--17:25
-061e689 - César Manuel Varela García, 3 minutes ago : Initial commit
+c57871b - vlorenzo, 19 hours ago : Dockerfile
+e47fd8c - César Manuel Varela García, 4 days ago : Update Readme-Es.md
+bddd555 - César Manuel Varela García, 4 days ago : Update Readme-Es.md
+6f91e63 - hybridoa, 8 days ago : Create Sofia-SIP.md
+92fddc1 - César Manuel Varela García, 2 weeks ago : Actualizar Readme-Es.md
+7a9c34a - Cesar Manuel Varela Garcia, 2 weeks ago : Correcciones de linting 28/02/2025--17:28
+b97521b - Cesar Manuel Varela Garcia, 2 weeks ago : Correcciones de linting 28/02/2025--17:25
+061e689 - César Manuel Varela García, 2 weeks ago : Initial commit
