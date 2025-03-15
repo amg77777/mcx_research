@@ -6,6 +6,12 @@ Sofia-SIP es una pila SIP de código abierto robusta utilizada para la implement
 
 Este proyecto proporciona una serie de demos prácticas para aprender a utilizar Sofia-SIP desde un nivel básico hasta intermedio-avanzado.
 
+## Demos
+
+### **Demo 1: Instalación y configuración básica**
+
+**Objetivo:** Instalar **Sofia-SIP** y configurar el entorno de desarrollo.
+
 ### Para instalar
    ```sh
 >> sudo apt-get update
@@ -22,22 +28,6 @@ Este proyecto proporciona una serie de demos prácticas para aprender a utilizar
 >> sudo apt-get purge libsofia-sip-ua-dev
 >> sudo apt-get purge --auto-remove libsofia-sip-ua-dev
    ```
-
-## Demos
-
-### **Demo 1: Instalación y configuración básica**
-
-**Objetivo:** Instalar **Sofia-SIP** y configurar el entorno de desarrollo.
-
-1. Instalar Sofia-SIP en un sistema Linux:
-   ```sh
-   >> sudo apt-get install sofia-sip-bin
-   ```
-2. Verificar la instalación ejecutando:
-   ```sh
-   >> sofia-sip-test --version
-   ```
-3. Explorar la estructura de archivos y directorios de Sofia-SIP.
 
 ---
 
