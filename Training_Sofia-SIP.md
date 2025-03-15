@@ -6,6 +6,23 @@ Sofia-SIP es una pila SIP de código abierto robusta utilizada para la implement
 
 Este proyecto proporciona una serie de demos prácticas para aprender a utilizar Sofia-SIP desde un nivel básico hasta intermedio-avanzado.
 
+### Para instalar
+   ```sh
+>> sudo apt-get update
+>> sudo apt install libsofia-sip-ua-dev
+>> sudo apt install libsofia-sip-ua-glib-dev
+>> sudo apt install libsofia-sip-ua-glib3
+>> sudo apt install libsofia-sip-ua0
+>> sudo apt install telepathy-sofiasip
+   ```
+
+### Para remover
+   ```sh
+>> sudo apt-get remove libsofia-sip-ua-dev
+>> sudo apt-get purge libsofia-sip-ua-dev
+>> sudo apt-get purge --auto-remove libsofia-sip-ua-dev
+   ```
+
 ## Demos
 
 ### **Demo 1: Instalación y configuración básica**
@@ -14,11 +31,11 @@ Este proyecto proporciona una serie de demos prácticas para aprender a utilizar
 
 1. Instalar Sofia-SIP en un sistema Linux:
    ```sh
-   sudo apt-get install sofia-sip-bin
+   >> sudo apt-get install sofia-sip-bin
    ```
 2. Verificar la instalación ejecutando:
    ```sh
-   sofia-sip-test --version
+   >> sofia-sip-test --version
    ```
 3. Explorar la estructura de archivos y directorios de Sofia-SIP.
 
@@ -33,7 +50,10 @@ Este proyecto proporciona una serie de demos prácticas para aprender a utilizar
 3. Enviar un mensaje **REGISTER** con un `Contact:` adecuado.
 4. Capturar y analizar la respuesta del servidor.
 
----
+#### Para compilar
+   ```sh
+>> gcc demo2.c -o demo2 $(pkg-config --cflags --libs sofia-sip-ua)
+   ```
 
 ### **Demo 3: Implementación de INVITE**
 
