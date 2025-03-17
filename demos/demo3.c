@@ -76,6 +76,7 @@ int main(void) {
     sleep(1);
 
     // Limpieza
+    // Liberamos
     nua_destroy(nua);
     su_root_destroy(root);
     su_deinit();
