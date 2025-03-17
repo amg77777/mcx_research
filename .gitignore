@@ -1,0 +1,37 @@
+# Ignore object files, binaries, and debug files
+*.o
+*.a
+*.so
+*.exe
+*.out
+*.dll
+*.dylib
+
+# Ignore compiled source and dependency files
+*.d
+
+# Ignore editor and IDE-specific files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore build directories
+/build/
+/bin/
+/obj/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore Makefile artifacts
+Makefile.in
+Makefile.am
+
+# Ignore ctags and cscope files
+tags
+cscope.*
+
