@@ -1,4 +1,5 @@
-7b9582b - cmvgg, 36 seconds ago : Actualización de: demos/demo2.c demos/demo3 demos/demo3.c demos/demo4.c demos/docs/Training_Sofia-SIP.md demos/docs/invite.sip  [17/03/2025 16:11]
+72d2523 - cmvgg, 2 minutes ago : Actualización de: .vscode/c_cpp_properties.json .vscode/launch.json .vscode/settings.json Training_Sofia-SIP.md demo2.c demo3.c demos/demo3 invite.sip pruebas/Dockerfile  [17/03/2025 16:11]
+7b9582b - cmvgg, 2 minutes ago : Actualización de: demos/demo2.c demos/demo3 demos/demo3.c demos/demo4.c demos/docs/Training_Sofia-SIP.md demos/docs/invite.sip  [17/03/2025 16:11]
 a52a30d - cmvgg, 2 days ago : Actualización de: .vscode/c_cpp_properties.json .vscode/launch.json .vscode/settings.json demo2 demo3  [15/03/2025 18:18]
 8ac1fff - cmvgg, 2 days ago : Actualización de: Training_Sofia-SIP.md  [15/03/2025 18:17]
 361f6eb - cmvgg, 2 days ago : Actualización de: demo2 demo3 demo3.c invite.sip  [15/03/2025 18:15]
