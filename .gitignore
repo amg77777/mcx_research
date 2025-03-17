@@ -14,8 +14,8 @@
 *.swp
 *.swo
 *~
-.vscode/
-.idea/
+.vscode
+.idea
 *.code-workspace
 
 # Ignore build directories
