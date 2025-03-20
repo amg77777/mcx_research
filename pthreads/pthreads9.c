@@ -14,15 +14,15 @@ typedef struct {
 } task_t;
 
 typedef struct {
-    task_t *tasks[MAX_PRIORITY][MAX_TASKS];
-    int head[MAX_PRIORITY];
-    int tail[MAX_PRIORITY];
-    int count[MAX_PRIORITY];
+    task_t **tasks[1];
+    int head[1];
+    int tail[1];
+    int count[1];
     int capacity;
     pthread_mutex_t queue_mutex;
-    pthread_cond_t queue_not_empty[MAX_PRIORITY];
-    pthread_cond_t queue_not_full[MAX_PRIORITY];
-    pthread_t threads[NUM_THREADS];
+    pthread_cond_t queue_not_empty[1];
+    pthread_cond_t queue_not_full[1];
+    pthread_t threads[THREAD_POOL_SIZE];
     int shutdown;
 } thread_pool_t;
 

@@ -25,7 +25,7 @@ typedef struct {
 } task_t;
 
 typedef struct {
-    task_t *tasks[1][MAX_TASKS];
+    task_t **tasks[1];
     int head[1];
     int tail[1];
     int count[1];
