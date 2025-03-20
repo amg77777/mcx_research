@@ -12,11 +12,6 @@
 #include <stdlib.h>
 #include <string.h> // Necesario para strcpy
 
-    //prueba socket
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-
 #define SIP_IDENTITY "sip:caller@127.0.0.1"
 #define SIP_CONTACT_STR "sip:caller@127.0.0.1"
 #define SIP_DEST     "sip:127.0.0.1:5060"
@@ -86,7 +81,6 @@ static void sip_invite_callback(nua_event_t event, int status,
             // El INVITE esta ok, info ok
           printf("200 OK recibido. Enviando ACK...\n");
           nua_ack(nh, TAG_END()); // Send ACK for 200 OK
-          // nua_shutdown(nua); // Considerar si esto es apropiado aquí
        }
     }
     else if (event == nua_i_ack)
@@ -198,7 +192,8 @@ int main(void) {
 
         if (strcmp(command, "salir") == 0) {
             break;
-        } else if (strncmp(command, "enviar ", 7) == 0) {
+        }
+        else if (strncmp(command, "enviar ", 7) == 0) {
             if (sscanf(command + 7, "%99s %[^\n]", to_uri, message) == 2) {
                 send_sip_message(nua, root, to_uri, message);
             } else {
