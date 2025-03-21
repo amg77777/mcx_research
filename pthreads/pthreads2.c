@@ -20,6 +20,21 @@ void *worker_function(void *arg) {
     - Imprime un mensaje indicando el inicio de la segunda fase del trabajo.
     - Termina la ejecución del hilo.
     */
+     int thread_id = *(int*)arg;
+     printf("Inicio del trabajo del hilo %d\n", thread_id);
+     // Tarea del thread
+     printf("Tarea del hilo %d\n", thread_id);
+     printf("Esperando a la barrera\n");
+     sleep(2);
+     int bar = pthread_barrier_wait(&barrier);
+     if(bar != 0 && bar != PTHREAD_BARRIER_SERIAL_THREAD) {
+       printf("Error en el barrier\n");
+       pthread_exit(NULL);
+     }
+     if(thread_id == PTHREAD_BARRIER_SERIAL_THREAD) {
+       printf("Tarea del barrier finalizada\n");
+     }
+     pthread_exit(NULL);
 }
 
 int main() {
@@ -28,14 +43,14 @@ int main() {
     srand(time(NULL));
 
     if (pthread_barrier_init(&barrier, NULL, NUM_THREADS) != 0) {
-        perror("Error al inicializar la barrera");
+        perror("Error al inicializar la barrera\n");
         return 1;
     }
 
     for (int i = 0; i < NUM_THREADS; ++i) {
         thread_ids[i] = i;
         if (pthread_create(&threads[i], NULL, worker_function, &thread_ids[i]) != 0) {
-            perror("Error al crear el hilo");
+            perror("Error al crear el hilo\n");
             pthread_barrier_destroy(&barrier);
             return 1;
         }
