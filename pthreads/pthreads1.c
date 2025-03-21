@@ -12,7 +12,7 @@ typedef struct {
 } cache_entry_t;
 
 typedef struct {
-    cache_entry_t cache[MAX_CACHE_SIZE];
+    cache_entry_t cache[MAX_CACHE_SIZE]; // array de 10 posiciones, max 10 nodes
     int count;
     pthread_rwlock_t rwlock;
 } shared_cache_t;
@@ -22,20 +22,28 @@ char *cache_lookup(shared_cache_t *cache, const char *key);
 int cache_add(shared_cache_t *cache, const char *key, const char *value);
 
 void cache_init(shared_cache_t *cache) {
-    /*
-    Inicializa la estructura de la caché compartida y el read-write lock.
-    */
+    /* Inicializa la estructura de la caché compartida y el read-write lock. */
+    cache->count = 0;
+    pthread_rwlock_init(&cache->rwlock, NULL);
 }
 
 char *cache_lookup(shared_cache_t *cache, const char *key) {
-    /*
-    Busca una entrada en la caché de forma segura para múltiples lectores.
-
+    /* Busca una entrada en la caché de forma segura para múltiples lectores.
     - Adquiere el lock de lectura para la caché.
     - Itera a través de las entradas de la caché.
     - Si encuentra la clave, libera el lock y retorna el valor.
     - Si no se encuentra, libera el lock y retorna NULL.
     */
+    int i = -1;
+    pthread_rwlock_rdlock(&cache->rwlock);
+    while (i++ < cache->count) {
+        if (strcmp(cache->cache[i].key, key) == 0) {
+            pthread_rwlock_unlock(&cache->rwlock);
+            return cache->cache[i].value;
+        }
+        pthread_rwlock_unlock(&cache->rwlock);
+        return(NULL);
+    }
 }
 
 int cache_add(shared_cache_t *cache, const char *key, const char *value) {
