@@ -3,11 +3,6 @@
 ## Installation Guide
 
 1. **Clone the Repository**  
-   Clone the repository to your local machine:
-   ```sh
-   git clone https://github.com/your-repo/MCX-SIP-Comm.git
-   cd MCX-SIP-Comm
-   
    
 2. **Build with Docker**  
 The project includes a Docker configuration to build the system with all dependencies pre-configured (including Sofia-SIP, OpenSSL, etc.), ensuring a smooth setup without the need for sudo or system-wide installations.
