@@ -20,10 +20,6 @@ MCX-SIP-Comm is a **mission-critical communication system** built with **SIP (Se
 - **Testing Framework**: Custom-built automation tools for functional and stress testing.
 - **Docker**: Integrated Docker support to build and run the system in a containerized environment, eliminating the need for `sudo` or system-wide installations and dependencies.
 
-## Roles
-- **Developer**: Responsible for implementing SIP signaling, media handling, and session management, with a focus on security and performance.
-- **QA Engineer**: Develops testing strategies, creates automated test scripts, and ensures the system's reliability under varying loads.
-
 ## Installation Guide
 
 1. **Clone the Repository**  
