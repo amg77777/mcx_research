@@ -49,11 +49,6 @@ Once the build completes, you can run the SIP server and client:
     # Start a client
     ./mcx_sip_client -u user1 -p 5060
 
-## Contributors
-
--    Vanessa Lorenzo Toquero – Developer & QA
--    César M. Varela García – QA & Developer
-
 ## License
 
 This project is licensed under the **MIT License**.
