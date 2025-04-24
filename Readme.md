@@ -1,24 +1,4 @@
-# MCX-SIP-Comm
-
-## Overview
-MCX-SIP-Comm is a **mission-critical communication system** built with **SIP (Session Initiation Protocol)** and **MCPTT (Mission-Critical Push-to-Talk)** technologies to ensure **secure, real-time voice communication** in high-reliability environments. This system is designed to provide **encrypted, concurrent, and scalable** communication, ideal for mission-critical applications that require the highest levels of reliability and security.
-
-## Key Features
-- **SIP-based signaling**: Handles call setup, session management, and signaling using the robust SIP protocol.
-- **MCPTT functionality**: Implements Mission-Critical Push-to-Talk (MCPTT) for instant, reliable voice communication in high-stakes environments.
-- **End-to-end encryption**: Utilizes **TLS** for signaling security and **SRTP** for encrypted media, ensuring communication confidentiality.
-- **Multithreaded processing**: Uses **POSIX pthreads** to manage multiple concurrent calls, maximizing performance and responsiveness.
-- **Efficient session management**: Implements advanced **data structures** such as **linked lists**, **structs**, **enums**, and **unions** for optimal session management and scalability.
-- **Automated QA framework**: Includes a custom **QA automation suite** for functional and stress testing to ensure system reliability under heavy load conditions.
-
-## Technologies & Tools Used
-- **SIP Stack**: Sofia-SIP, a robust open-source SIP stack.
-- **Multithreading**: POSIX **pthreads** for handling concurrent communications.
-- **Security**: **TLS** for signaling encryption, **SRTP** for media encryption.
-- **Programming Language**: C, leveraging low-level system capabilities for optimal performance.
-- **Data Structures**: Advanced use of **structs**, **enums**, **unions**, and **linked lists** for highly efficient and scalable session management.
-- **Testing Framework**: Custom-built automation tools for functional and stress testing.
-- **Docker**: Integrated Docker support to build and run the system in a containerized environment, eliminating the need for `sudo` or system-wide installations and dependencies.
+# MCX Research
 
 ## Installation Guide
 
